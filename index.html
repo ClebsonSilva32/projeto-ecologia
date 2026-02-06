@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR"> <!-- Alterado para português -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
+    <link rel="stylesheet" href="css/style.css">
+=======
+    <link rel="stylesheet" href="style.css">
+>>>>>>> 064e4d077b92ddb53b789a89e062ffdf35b420f4
+    <title>Ecologia</title>
+</head>
+<body>
+<!-- Início do Cabeçalho Principal-->
+<header class="container-header">
+    <!-- Logo -->
+    <div class="logo-area">
+        <img src="./img/eco1.png" class="logo-header" alt="Logo do projeto Ecologia">
+    </div>
+
+    <!-- Título central -->
+    <!-- Agora o título principal da página -->
+    <h1 class="titulo-header">Ecologia</h1>
+
+    <!-- Botão Hamburguer -->
+  <div class="hamburguer" onclick="toggleMenu()">
+    ☰
+  </div>
+
+
+    <!-- Menu -->
+    <nav aria-label="Menu principal">
+        <ul class="menu" role="menubar">
+            <li role="none"><a href="#inicio" role="menuitem">Início</a></li>
+            <li role="none"><a href="#sobre" role="menuitem">Sobre</a></li>
+            <li role="none"><a href="#projetos" role="menuitem">Projetos</a></li>
+            <li role="none"><a href="#faleconosco" role="menuitem">Fale Conosco</a></li>
+        </ul>
+    </nav>
+</header>
+<!-- Fim do Cabeçalho Principal-->
+
+<!--Conteúdo Principal-->
+<main>
+
+<!--Seção Início-->
+<section id="inicio" class="inicio">
+  <img src="./img/logo1.png" class="logo-arvore" alt="Logo em formato de árvore">
+    <div class="texto1 animate-text shadow-box">
+        <!-- Agora como h2, já que o h1 está no header -->
+        <h2>Venha Fazer Parte da Nossa Campanha para Preservar o Planeta</h2>
+        <p class="subtitulo">O nosso Planeta Precisa de Todos Nós</p>
+        <!-- Botões agora são links estilizados -->
+        <a href="#faleconosco" class="btn-fale-conosco">Fale Conosco</a>
+        <a href="#projetos" class="eventos">Eventos</a>
+    </div>
+</section>
+<!-- Fim da Seção Início-->
+
+
+<!--Início seção Sobre-->
+<section id="sobre" class="sobre">
+  <div class="sobre-conteudo">
+    <div class="sobre-imagem">
+      <img src="./img/eco1.png" alt="Floresta verde com árvores" class="imagem-floresta"/>
+    </div>
+
+    <div class="paragrafo">
+      <h2 class="subtitulo-sobre">Sobre</h2>
+      <p class="texto-info">
+        A ecologia é fundamental para entendermos a relação entre os seres vivos e o ambiente em que vivem. Nosso objetivo é conscientizar, informar e inspirar ações que contribuam para a preservação do planeta.
+      </p>
+      <p class="texto-info">
+        Neste espaço, reunimos informações, projetos e iniciativas que mostram como cada atitude pode fazer a diferença. Acreditamos que, juntos, podemos promover um futuro mais sustentável, equilibrado e em harmonia com a natureza.
+      </p>
+    </div>
+  </div>
+</section>
+<!--Fim seção Sobre-->
+
+<!--Início seção Projetos-->
+<section id="projetos" class="projetos">
+  <div>
+    <h2 class="sub-titulo-projetos">Projetos de Ecologia</h2>
+    <div class="cards-projetos">
+
+      <article class="card">
+        <h3>Reciclagem Criativa</h3>
+        <p>Projeto voltado para transformar resíduos em novos produtos sustentáveis.</p>
+        <a href="#" class="card-button">Conhecer Projeto</a>
+      </article>
+
+      <article class="card">
+        <h3>Energia Solar</h3>
+        <p>Iniciativa para incentivar o uso de energia limpa e renovável em comunidades.</p>
+        <a href="#" class="card-button">Conhecer Projeto</a>
+      </article>
+
+      <article class="card">
+        <h3>Reflorestamento</h3>
+        <p>Ações de plantio de árvores para recuperação de áreas degradadas.</p>
+        <a href="#" class="card-button">Conhecer Projeto</a>
+      </article>
+
+    </div>
+  </div>
+</section>
+<!--Fim da Seção Projetos-->
+
+<main>
+  <!-- Seção Fale Conosco -->
+  <section id="faleconosco" class="contato">
+    <h2 class="sub-titulo-contato">Entre em Contato</h2>
+    <div class="contato-container">
+      <div class="imagem-contato">
+        <img src="./img/contato00.png" class="logo-contato" alt="Ícone representando contato">
+      </div>
+
+      <form class="form-contato" id="formContato">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem..." required></textarea>
+
+        <button type="submit">Enviar</button>
+        <p id="mensagem-sucesso" style="display:none; color: green; margin-top: 10px;">
+          Mensagem enviada com sucesso!
+        </p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-about">
+      <h3>EcoVida</h3>
+      <p>Promovendo a conscientização e o cuidado com o meio ambiente para um futuro mais sustentável.</p>
+    </div>
+    
+    <div class="footer-social">
+      <a href="#"><img src="icon-facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="icon-instagram.png" alt="Instagram"></a>
+      <a href="#"><img src="icon-twitter.png" alt="Twitter"></a>
+    </div>
+  </div>
+
+  <p class="copy">&copy; 2025 EcoVida - Todos os direitos reservados.</p>
+</footer>
+
+
+
+
+<script>
+  function toggleMenu() {
+    document.querySelector('.menu').classList.toggle('show');
+  }
+</script>
+
+</body>
+</html>
