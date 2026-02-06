@@ -1,0 +1,420 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #f9f9f9;
+}
+
+/* ---------------- Cabeçalho ---------------- */
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2e7d32; /* Verde ecológico */
+  color: #fff;
+  padding: 15px 30px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.logo-header {
+  height: 50px;
+  border-radius: 2rem;
+}
+.logo-header:hover{
+  cursor: pointer;
+  background-color: #c1e10c;
+  box-shadow: 0 6px 6px rgb(194, 237, 3);
+
+}
+
+.titulo-header {
+  font-size: 24px;
+  font-weight: bold;
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
+  
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: #c8e6c9;
+}
+
+/* ---------------- Seção Início ---------------- */
+.inicio {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 100px 20px 20px; /* espaço para o header fixo */
+  background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+  text-align: center;
+}
+
+.logo-arvore {
+  max-width: 300px;
+}
+
+.texto1 h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.subtitulo {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-style: italic;
+  color: #2e7d32;
+}
+
+/* Links como botões */
+a.btn-fale-conosco,
+a.eventos {
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 5px;
+  transition: 0.3s ease;
+}
+
+a.btn-fale-conosco {
+  background: #4CAF50;
+  color: white;
+}
+
+a.btn-fale-conosco:hover {
+  background: #45a049;
+}
+
+a.eventos {
+  background: #2196F3;
+  color: white;
+}
+
+a.eventos:hover {
+  background: #1976D2;
+}
+
+/* ---------------- Seção Sobre ---------------- */
+.sobre {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px;
+  background: #fff;
+}
+
+.sobre-conteudo {
+  display: flex;
+  max-width: 1100px;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.sobre-imagem img {
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.paragrafo {
+  flex: 1;
+}
+
+.subtitulo-sobre {
+  font-size: 26px;
+  margin-bottom: 15px;
+  color: #2e7d32;
+}
+
+.texto-info {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+/* ---------------- Seção Projetos ---------------- */
+.projetos {
+  min-height: 100vh;
+  padding: 80px 20px;
+  background: #f1f8e9;
+  text-align: center;
+}
+
+.sub-titulo-projetos {
+  font-size: 26px;
+  margin-bottom: 40px;
+  color: #2e7d32;
+}
+
+.cards-projetos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  color: #388e3c;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+a.card-button {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  background: #ff9800;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+a.card-button:hover {
+  background: #f57c00;
+}
+
+/* ---------------- Layout Base ---------------- */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------------- Seção Contato ---------------- */
+.contato {
+  min-height: 78vh; /* ocupa 80% da altura da tela */
+  padding: 50px 50px;
+  background: #fff;
+  text-align: center;
+  flex: 1; /* ocupa o espaço do meio */
+}
+
+.sub-titulo-contato {
+  font-size: 26px;
+  margin-bottom: 10px;
+  color: #2e7d32;
+  margin-top: 40px;
+}
+
+.contato-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  max-width: 1000px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.imagem-contato img {
+  max-width: 350px;
+}
+
+.form-contato {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-contato label {
+  font-weight: bold;
+  text-align: left;
+}
+
+.form-contato input,
+.form-contato textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.form-contato button {
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background: #4CAF50;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-bottom: 50px;
+}
+
+.form-contato button:hover {
+  background: #45a049;
+}
+
+/* ---------------- Footer Glass ---------------- */
+.footer {
+  /* Fundo semi-transparente (verde escuro) */
+  background: rgb(4, 129, 77); 
+  
+  /* Efeito vidro (desfoque do fundo atrás do footer) */
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px); /* compatibilidade Safari */
+  
+  color: #fff; /* cor do texto */
+  padding: 32px 20px; /* espaçamento interno: 40px topo/baixo, 20px lados */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* fonte do footer */
+  
+  margin-top: auto; /* força o footer a ficar no final da página */
+  text-align: center; /* centraliza todo o conteúdo */
+  
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3); /* sombra suave acima do footer */
+}
+
+.footer h3 {
+  color: #3ae406; /* cor do título (verde/azulado claro) */
+  font-size: 1.6rem; /* tamanho da fonte do título */
+  margin-top: -20px;
+}
+
+.footer p {
+  color: #f1faee; /* cor do parágrafo (branco suave) */
+  font-size: 1rem; /* tamanho da fonte do parágrafo */
+  line-height: 1.5; /* espaçamento entre linhas */
+  max-width: 600px; /* largura máxima do texto */
+  margin: 0 auto; /* centraliza o parágrafo dentro do container */
+}
+
+.footer .copy {
+  margin-top: 10px; /* espaço acima do copyright */
+  font-size: 0.9rem; /* tamanho menor da fonte */
+  color: #ffd60a; /* cor amarela suave */
+}
+
+/* Responsivo: ajustes para telas menores */
+@media (max-width: 768px) {
+  .footer h3 {
+    font-size: 1.5rem; /* reduz o título em telas pequenas */
+  }
+
+  .footer p {
+    font-size: 0.95rem; /* reduz levemente o parágrafo */
+    padding: 0 10px; /* adiciona espaçamento lateral para mobile */
+  }
+}
+
+
+
+/* ---------------- Responsividade Menu ---------------- */
+/* Ícone do menu (hambúrguer) */
+.hamburguer {
+  font-size: 28px;
+  cursor: pointer;
+  display: none; /* escondido no desktop */
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hamburguer {
+    display: block; /* aparece só no celular */
+  }
+
+  .menu {
+    display: none; /* começa escondido */
+    flex-direction: column;
+    gap: 15px;
+    background: rgba(0,0,0,0.6); /* preto semi-transparente */
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+
+  .menu.show {
+    display: flex; /* quando abrir */
+  }
+}
+
+/* ---------------- Responsividade inicio ---------------- */
+
+@media (max-width: 768px) {
+  .inicio {
+    flex-direction: column;  /* muda de linha para coluna */
+    gap: 20px;               /* diminui espaço */
+    padding: 120px 15px 30px; /* mais espaço no topo pro header */
+    text-align: center;
+  }
+
+  .logo-arvore {
+    max-width: 200px;  /* reduz a logo no celular */
+    width: 100%;
+    height: auto;
+  }
+
+  .texto1 h2 {
+    font-size: 22px; /* menor para caber melhor */
+  }
+
+  .subtitulo {
+    font-size: 16px;
+  }
+
+  a.btn-fale-conosco,
+  a.eventos {
+    width: 100%;       /* botões ocupam toda largura */
+    max-width: 250px;  /* mas não ficam gigantes */
+  }
+}
+
+
+
+
+
+
